@@ -1,0 +1,41 @@
+.nav-links li:hover{
+  transform: scale(1.4);
+  transition: transform 0.3s;
+}
+.nav-icons{
+  font-size: 2rem;
+  cursor: pointer;
+  transform: translateY(30%);
+  color: white;
+  display: none;
+
+}
+
+@media screen and (max-width:840px){
+  .nav-links{
+    width:60%;
+  }
+  }
+@media screen and (max-width:574px){
+  .nav-links{
+position: absolute;
+top:80px;
+background-color: orange;
+flex-direction: column;
+height: 50vh;
+text-align: center;
+width:100%;
+right:0%;
+/* transform: translateX(100%); */
+  }
+  .nav-item{
+    border-bottom:  1px solid white;
+    padding: 10px;
+  }
+.nav-links.active{
+  right:100%;
+}
+  .nav-icons{
+    display: block;
+  }
+  }
